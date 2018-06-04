@@ -1,0 +1,229 @@
+.formBody{
+  padding: 20px;
+  min-height:360px;
+  background: #fff;
+  &.editBody {
+    padding: 0;
+    //tab reset
+    .ant-tabs-ink-bar {
+      background-color: #FCCE01;
+    }
+    .ant-tabs-vertical.ant-tabs-left > .ant-tabs-bar .ant-tabs-tab {
+      text-align: left!important;
+      width:240px;
+      margin-bottom: 0;
+      padding: 17px 30px 17px 40px;
+      border-bottom: 1px solid #e9e9e9;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      &.ant-tabs-tab-active {
+        color: rgba(0, 0, 0, 0.65);
+        background: #fff8da
+      }
+      &:hover {
+        background: #fff8da;
+        color: rgba(0, 0, 0, 0.65)
+      }
+    }
+    .ant-tabs-content {
+      padding: 24px;
+      position: relative;
+      h1.title {
+        font-size: 20px;
+        color: rgba(0, 0, 0, 0.65)
+      }
+    }
+
+    //table reset
+    .formTable{
+      margin-bottom: 20px;
+      border: 1px solid #ebedf0;
+      border-bottom: none;
+      th,td{
+        text-align: left !important;
+        padding-left: 24px;
+      }
+      td {
+        font-size: 14px;
+      }
+    }
+
+    //card reset 
+    .dark-card{
+      background: #f7f7f7;
+      &:hover {
+        box-shadow: none;
+        border-color: #e9e9e9;
+      }
+      .add-btn {
+        margin-top: 20px;
+      }
+    }
+
+    .edit-input {
+      height: 48px;
+      &.room {
+        width: 60%;
+        margin-right: 3%;
+      }
+      &.price {
+        width: 37%;
+      }
+    }
+  }
+  .edit-table, .delete-table {
+    color: rgb(56, 178, 166);
+    cursor: pointer;
+  }
+}
+
+.ant-card-head-title {
+  font-size: 16px;
+}
+
+.bread-header {
+  position: relative;
+  .add-btn {
+    position: absolute;
+    margin-top: -8px;
+    right: 0;
+  }
+}
+
+//input reset
+.edit-input {
+  height: 45px;      
+}
+
+//reset button 
+.add-btn, .save-btn{
+  background-color: rgb(56, 178, 166);
+  border-color: rgb(56, 178, 166);
+  height: 46px;
+  &:hover, &:focus {
+    background-color: rgb(56, 178, 166);
+    border-color: rgb(56, 178, 166);
+  }
+  padding: 0 20px;
+}
+
+.save-btn {
+  padding: 0 30px;
+  font-size: 16px;
+}
+
+//modal reset
+.ant-modal-mask {
+  background-color: rgba(248,248,246,.9)!important;
+}
+.edit-modal {
+  .ant-modal-content {
+    padding: 20px;
+  }
+  .ant-modal-title {
+    font-size: 20px;
+    color: #4c4c4c;
+  }
+  .ant-modal-header,
+  .ant-modal-footer {
+    border: none;
+  }
+  .ant-modal-close-x {
+    font-size: 28px;
+    color: #9e9e9e;
+    font-weight: normal;
+  }
+  .ant-modal-footer{
+    text-align: left;
+  }
+  .delete-option {
+    color: #38b2a6;
+    font-size: 16px;
+    cursor: pointer;
+    float: right;
+    line-height: 50px;
+    i {
+      font-size: 18px;
+    }
+  }
+  .form-name {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 36px;
+  }
+}
+
+
+.property-panel {
+    &.show{
+      display: block;
+    }
+    h1 {
+      margin: 20px 0;
+    }
+    .save-btn {
+      background-color: #fcce01;
+      border: #fcce01;
+      color: #4c4c4c;
+      padding: 0 58px;
+      height: 48px;
+      margin-top: 40px;
+      &.cancel {
+        background: none;
+        border: none;
+      }
+    }
+    .close{
+      font-size: 30px;
+      color: #c8c9cb;
+      margin: -14px;
+    }
+
+
+}
+
+//select reset
+.ant-select-selection--single , 
+.ant-select-lg .ant-select-selection__rendered{
+  height: 48px!important;
+  line-height: 48px;
+}
+
+//menu reset
+.edit-menu {
+  border-right: 0;
+  .ant-menu-item {
+    height: 56px;
+    line-height: 56px;
+    border-bottom: 1px solid #e9e9e9;
+    font-size: 14px;
+    padding: 0 30px;
+    &.ant-menu-item-selected,
+    &:hover {
+      background-color: #fff8da;
+      border-top: 1px solid #fcce01;
+      border-bottom: 1px solid #fcce01;
+      color: rgba(0, 0, 0, 0.65);
+    }
+  }
+}
+
+//layout reset
+.edit-layout {
+  background: #fff;
+  .ant-layout-sider,.ant-layout-sider-children {
+    background: #fff!important;
+    &:hover {
+      background:#fff;
+
+    }
+  }
+  .ant-layout-content {
+    padding: 30px;
+  }
+  .ant-layout-sider {
+    min-height: 600px;
+    border-right: 1px solid #ebedf0;
+  }
+}
